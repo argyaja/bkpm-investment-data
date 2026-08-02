@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 # 2. Run the Pipeline
 python scraper.py        # downloads ~33k rows -> data/raw/investasi_raw.jsonl
-python transform.py      # cleans -> data/clean/investasi_clean.parquet (or .csv)
+python transform.py      # cleans -> data/clean/investasi_clean.csv
 python aggregate.py      # aggregations -> data/marts/
 ```
 
