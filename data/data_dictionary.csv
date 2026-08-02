@@ -1,0 +1,15 @@
+variable,description
+periode,Periode dari data yang disajikan (sudah dikelompokan berdasarkan tahun dan triwulan)
+status_penanaman_modal,"Status asal modal investasi, dibagi menjadi Penanaman Modal Asing (PMA), dan Penanaman Modal Dalam Negeri (PMDN)"
+regional,"Regional negara asal investasi (Asia, Eropa, Australia, dll)"
+negara,Nama negara asal investasi
+sektor_utama,"Pembagian Sektor Berdasarkan Primer, Sekunder, Tersier"
+nama_sektor,Nama sektor yang sudah dipetakan dalam 23 Sektor Investasi BKPM
+deskripsi_kbli_2digit,2 digit pertama dari proyek yang dijadikan referensi pelaporan LKPM
+provinsi,Provinsi dari proyek yang dijadikan referensi pelaporan LKPM
+kabupaten_kota,Kabupaten/Kota dari proyek yang dijadikan referensi pelaporan LKPM
+jawa_luar_jawa,Pengelompokan Lokasi proyek berdasarkan Jawa & Luar Jawa
+pulau,Pulau dari lokasi proyek yang dijadikan referensi pelaporan LKPM
+investasi_rp_juta,Nilai tambahan realisasi dari laporan LKPM yang disajikan dalam satuan Juta Rupiah
+investasi_us_ribu,Nilai tambahan realisasi dari laporan LKPM yang disajikan dalam satuan Ribu US Dolar
+tki,Jumlah Penyerapan Tenaga Kerja Indonesia dari laporan LKPM yang disajikan dalam satuan Orang Sumber data

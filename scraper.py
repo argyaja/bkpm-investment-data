@@ -41,7 +41,6 @@ def scrape_data():
   request_count = 0
 
   while True:
-      # Menyiapkan parameter untuk halaman saat ini
       current_params = base_params.copy()
       current_params['start'] = current_start
       current_params['length'] = PAGE_LENGTH

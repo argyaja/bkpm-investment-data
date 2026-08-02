@@ -41,7 +41,7 @@ def main():
     print("Memulai proses transformasi data...")
 
     data = []
-    with open('/content/sample_data/investasi_raw.jsonl', 'r', encoding='utf-8') as f:
+    with open('/data/raw/investasi_raw.jsonl', 'r', encoding='utf-8') as f:
         for line in f:
             data.append(json.loads(line))
 
