@@ -1,8 +1,17 @@
 # Python cache
 __pycache__/
 *.py[cod]
+*$py.class
 
 # Environments
 venv/
 .venv/
 env/
+
+# Secrets & Configs (Wajib untuk Katadata)
+.env
+.env.*
+secrets.json
+
+# OS generated files
+.DS_Store
