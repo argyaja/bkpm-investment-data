@@ -7,7 +7,7 @@ Scrapes BKPM investment realization data (Q2 2026), cleans it, and aggregates by
 Karena pengembangan utama dilakukan di lingkungan Google Colab, struktur ini merepresentasikan repositori untuk dijalankan secara lokal (setelah diunduh dari Colab).
 
 ```bash
-git clone <repo-url> && cd <repo>
+git clone https://github.com/argyaja/bkpm-investment-data.git && cd bkpm-invesment-data
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```

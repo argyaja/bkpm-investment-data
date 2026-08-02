@@ -1,0 +1,22 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kementerian Investasi dan Hilirisasi/BKPM",
+    "alternateName": "BKPM",
+    "url": "https://www.data.bkpm.go.id",
+    "logo": "https://data.bkpm.go.id/assets/img/logo_bkpm.png",
+    "sameAs": [
+        "https://www.instagram.com/baborsehat/",
+        "https://twitter.com/ABORSEHAT",
+        "https://www.youtube.com/@bkpmri"
+    ],
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62-21-5252008",
+        "contactType": "customer service",
+        "availableLanguage": [
+            "Indonesian",
+            "English"
+        ]
+    }
+}
