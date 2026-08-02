@@ -53,9 +53,9 @@ This endpoint accepts `GET` requests with DataTables query parameters. The cruci
 
 ## Decisions and Tradeoffs
 
-* **Scraper Page Size (Task A2.9):** I chose a page size of 100 per request, resulting in 330 total requests. This size balances the need to minimize total HTTP requests to the government server (politeness) while avoiding payloads that are too large and prone to connection timeouts.
-* **Hidden Characters (Task B1.2):** I discovered a Byte Order Mark (BOM) character (`\ufeff`) hidden in the column names, likely originating from how the source system exported the CSV/JSON. This causes `df["periode"]` to fail because the actual key is `\ufeffperiode`. I resolved this by stripping `.replace('\ufeff', '')` from all column headers during the extraction phase.
-* **KBLI as String (Task B1.4):** The `kbli_kode` is explicitly cast and kept as a zero-padded string (e.g., "07", not 7). This is crucial because KBLI codes are categorical identifiers, not quantitative measures. Converting them to integers drops leading zeros, which would break foreign-key relationships when joining this data to standard KBLI reference tables.
+* **Scraper Page Size (Task A2.9):** I chose a page size of 100 per request, resulting in 330 total requests. This page size reduces the total number of HTTP requests sent to the government server while keeping each response at a manageable size, helping reduce the likelihood of connection timeouts.
+* **Hidden Characters (Task B1.2):** I discovered a Byte Order Mark (BOM) character (\ufeff) hidden in the column names, likely introduced when the source system exported the CSV or JSON file. This causes `df["periode"]` to fail because the actual column name is \ufeffperiode. I resolved this by removing the BOM from all column names during the extraction phase using .replace('\ufeff', '').
+* **KBLI as String (Task B1.4):** The `kbli_kode` field is explicitly stored as a zero-padded string (for example, "07" instead of 7). This is important because KBLI codes are categorical identifiers rather than numeric values. Converting them to integers would remove leading zeros, which could break joins and foreign-key relationships with standard KBLI reference tables.
 
 ## Known Limitations
 
