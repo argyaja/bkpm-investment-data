@@ -8,7 +8,8 @@ Karena pengembangan utama dilakukan di lingkungan Google Colab, struktur ini mer
 
 ```bash
 # 1. Clone & Setup Environment
-git clone https://github.com/argyaja/bkpm-investment-data.git && cd bkpm-invesment-data
+# 1. Clone & Setup Environment
+git clone https://github.com/argyaja/test-data-management-analyst-athallah.git && cd test-data-management-analyst-athallah
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
